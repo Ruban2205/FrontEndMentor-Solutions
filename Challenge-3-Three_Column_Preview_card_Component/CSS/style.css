@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root{
+    /* Primary Colors */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral Colors */
+    --Transparent-white: hsla(0, 0%, 100%, 0.75); 
+    --Very-light-gray: hsl(0, 0%, 95%);
+
+    /* Fonts */
+    --font1: 'Big Shoulders Display', cursive;
+    --font2: 'Lexend Deca', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container-left{
+    height: 70%;
+    width: 22rem;
+    background-color: var(--Bright-orange);
+    padding: 3rem;
+    border-radius: 8px 0 0 8px;
+}
+
+.container-middle{
+    height: 70%;
+    width: 22rem;
+    background-color: var(--Dark-cyan);
+    padding: 3rem;
+}
+
+.container-right{
+    height: 70%;
+    width: 22rem;
+    background-color: var(--Very-dark-cyan);
+    padding: 3rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.card-title{
+    font-family: var(--font1);
+    font-weight: 700;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+.card-body{
+    font-family: var(--font2);
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0 0 10rem 0;
+    color: white;
+}
+
+button{
+    background-color: transparent;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    border: 2px solid white;
+    font-family: var(--font2);
+}
+button:hover{
+    color: var(--Very-dark-cyan);
+    background-color: var(--Very-light-gray);
+    transition: 0.3s ease-in-out;
+}
+
+
+@media screen and (max-width: 740px) {
+    .container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+    .container-left {
+        height: 70%;
+        width: 20rem;
+        background-color: var(--Bright-orange);
+        padding: 3rem;
+        border-radius: 8px;
+        margin: 20px 0;
+    }
+
+    .container-middle {
+        height: 70%;
+        width: 20rem;
+        background-color: var(--Dark-cyan);
+        padding: 3rem;
+        border-radius: 8px;
+        margin: 0 0 20px 0;
+    }
+
+    .container-right {
+        height: 70%;
+        width: 20rem;
+        background-color: var(--Very-dark-cyan);
+        padding: 3rem;
+        border-radius: 8px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .container-left {
+        height: 70%;
+        width: 15rem;
+        background-color: var(--Bright-orange);
+        padding: 2.5rem;
+        border-radius: 8px;
+        margin: 20px 0;
+    }
+
+    .container-middle {
+        height: 70%;
+        width: 15rem;
+        background-color: var(--Dark-cyan);
+        padding: 2.5rem;
+        border-radius: 8px;
+        margin: 0 0 20px 0;
+    }
+
+    .container-right {
+        height: 70%;
+        width: 15rem;
+        background-color: var(--Very-dark-cyan);
+        padding: 2.5rem;
+        border-radius: 8px;
+    }
+}
