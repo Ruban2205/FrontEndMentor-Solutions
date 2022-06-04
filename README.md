@@ -1,1 +1,1 @@
-# FrontEndMentor-Solutions
+# Frontnd Mentor - Solutions
