@@ -1,31 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Profile card component | Ruban Gino Singh</title>
 
   <link rel="stylesheet" href="assets/CSS/style.css">
 </head>
+
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
+  <div class="container">
+    <div class="cover-image">
+      <img src="assets/images/bg-pattern-card.svg" alt="Card Image">
+    </div>
+    <div class="info-container">
+      <div class="user-container">
+        <img src="assets/images/image-victor.jpg" alt="Profile Image" class="profile-icon">
+        <h2>Victor Crest <span class="regular">26</span></h2>
+        <h5>London</h5>
+      </div>
+      <hr class="seperator">
+      <div class="ratings-container">
+        <div class="one">
+          <h3>80K</h3>
+          <p>Followers</p>
+        </div>
+        <div class="two">
+          <h3>803K</h3>
+          <p>Likes</p>
+        </div>
+        <div class="three">
+          <h3>1.4K</h3>
+          <p>Photos</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://rubangino.in/">Ruban Gino Singh</a>.
   </div>
 </body>
+
 </html>
