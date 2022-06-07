@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-# Frontend Mentor - Order summary card solution
-=======
+
 # Frontend Mentor - Order summary card solution - Yet to update
->>>>>>> 0ba8950cb1508793e085a44ab2ce32e2cf961234
 
 This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
