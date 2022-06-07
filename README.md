@@ -1,4 +1,4 @@
-# Frontnd Mentor - Solutions
+# Frontnd Mentor - Solutions - Yet to update 
 
 This repositry has the Solutions form the Frontend Mentor website. 
 
