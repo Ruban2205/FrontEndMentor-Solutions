@@ -41,6 +41,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
+**URL LINKS YET TO UPDATED**
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
@@ -48,16 +49,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- HTML
+- CSS
+- Responsive Development
+- CSS Flexbox
 
 ### What I learned
 
@@ -66,22 +61,33 @@ Use this section to recap over some of your major learnings while working throug
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div class="pricing">
+      <article>
+      <img src="images/icon-music.svg" alt="">
+      <div>
+        <h4>Annual Plan</h4>
+        <p>$59.99/year</p>
+      </div>
+      </article>
+      <button class="btn btn-change">Change</button>
+    </div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+bg-image{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```
 
 ### Continued development
 
@@ -111,4 +117,4 @@ This is where you can give a hat tip to anyone who helped you out on this projec
 **Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
 =======
 # Frontend Mentor - Order Summary Component Challenge
->>>>>>> b09e851579517d54aaafb515bdd13a6879468351
+
