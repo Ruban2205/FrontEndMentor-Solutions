@@ -83,5 +83,3 @@ bg-image{
 ## Acknowledgments
 
 Credit - [Frontendmentor.io](https://frontendmentor.io/)
-
-
