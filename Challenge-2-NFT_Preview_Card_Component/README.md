@@ -67,16 +67,124 @@ To see how you can add code snippets, see below:
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
+
+  <div class="title-container">
+      <h1 class="card-title">Equilibrium #3429</h1>
+      <p class="card-text">Our Equilibrium collection promotes balance and calm.</p>
+    </div>
+
+    <div class="card-body">
+      <div>
+        <div class="etherum-price">
+          <img src="./images/icon-ethereum.svg" alt="ethereum">
+        </div>
+        <h4 class="coin-name">0.041 ETH</h4>
+      </div>
+
+      <div>
+        <div class="etherum-days">
+          <img src="./images/icon-clock.svg" alt="clock">
+        </div>
+        <h4 class="coin-day">3 days left</h4>
+      </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="card-footer">
+      <div class="footer-section">
+        <img src="./images/image-avatar.png" alt="Jules-wyvern-Image">
+      </div>
+      <p class="footer-text">Creation of <a class="footer-name" href="#">Jules Wyvern</a></p>
+    </div>
+  </div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.card-title {
+    font-size: 1.45em;
+    margin: 25px 0 15px;
+    color: var(--White);
 }
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+
+.card-title:hover {
+    color: var(--Cyan);
+    cursor: pointer;
 }
+
+.card-text {
+    font-size: .90em;
+    color: var(--Soft-blue);
+
+}
+
+/* Card Body */
+.card-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 0 .40rem 0;
+}
+
+.card-body div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.coin-name {
+    color: var(--Cyan);
+}
+
+.coin-day {
+    color: var(--Soft-blue);
+}
+
+.etherum-price,
+.etherum-days {
+    margin-right: 1rem;
+}
+
+/* Card Horizantal Line */
+.line {
+    width: 100%;
+    height: .5px;
+    background-color: var(--Soft-blue);
+    /* border: .5px solid; */
+    margin: .20rem 0;
+    display: inline-block;
+}
+
+/* Card Footer Section */
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: .50rem 0 0 0;
+}
+
+.footer-section img{
+    width: 100%;
+    border: 1px solid var(--White);
+    border-radius: 50%;
+}
+
+.footer-section{
+    width: 18%;
+}
+
+.footer-text {
+    margin: auto 1rem;
+    color: var(--Soft-blue);
+    font-size: 18px;
+}
+
+.footer-name {
+    color: var(--White);
+}
+
+.footer-name:hover {
+    color: var(--Cyan);
+}
+
 ```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
@@ -106,9 +214,4 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
-=======
-# Fontend Mentor - NFT Preview card Component
->>>>>>> b09e851579517d54aaafb515bdd13a6879468351
+Credit: Frontendmentor.io
