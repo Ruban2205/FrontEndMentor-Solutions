@@ -1,4 +1,4 @@
-# Frontend Mentor - 3-column preview card component solution - Yet to update
+# Frontend Mentor - 3-column preview card component solution
 
 This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -11,12 +11,8 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,20 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![image](https://user-images.githubusercontent.com/63004130/173406363-92031ece-5a93-4c54-bbc7-79863499d5f2.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Ruban2205/FrontEndMentor-Solutions/tree/main/Challenge-3-Three_Column_Preview_card_Component](https://github.com/Ruban2205/FrontEndMentor-Solutions/tree/main/Challenge-3-Three_Column_Preview_card_Component)
+- Live Site URL: [https://ruban2205.github.io/FrontEndMentor-Solutions/Challenge-3-Three_Column_Preview_card_Component/3-column-preview-card-component-main/index.html](https://ruban2205.github.io/FrontEndMentor-Solutions/Challenge-3-Three_Column_Preview_card_Component/3-column-preview-card-component-main/index.html)
 
 ## My process
 
@@ -51,50 +39,95 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
 ```html
 <h1>Some HTML code I'm proud of</h1>
+
+
+  <div class="container">
+    <div class="container-left">
+      <img src="assets/images/icon-sedans.svg" alt="">
+      <h1 class="card-title">Sedans</h1>
+      <p class="card-body">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
+      or on your next road trip.</p>
+      <button>Learn more</button>
+    </div>
+
+    <div class="container-middle">
+      <img src="assets/images/icon-suvs.svg" alt="">
+      <h1 class="card-title">SUVs</h1>
+      <p class="card-body">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
+      and off-road adventures.</p>
+      <button>Learn more</button>
+    </div>
+
+    <div class="container-right">
+      <img src="assets/images/icon-luxury.svg" alt="">
+      <h1 class="card-title">Luxury</h1>
+      <p class="card-body">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
+      rental and arrive in style.</p>
+      <button>Learn more</button>
+    </div>
+  </div>
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
+```
+CSS
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.container-left{
+    height: 70%;
+    width: 22rem;
+    background-color: var(--Bright-orange);
+    padding: 3rem;
+    border-radius: 8px 0 0 8px;
+}
+
+.container-middle{
+    height: 70%;
+    width: 22rem;
+    background-color: var(--Dark-cyan);
+    padding: 3rem;
+}
+
+.container-right{
+    height: 70%;
+    width: 22rem;
+    background-color: var(--Very-dark-cyan);
+    padding: 3rem;
+    border-radius: 0 8px 8px 0;
+}
+
+.card-title{
+    font-family: var(--font1);
+    font-weight: 700;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    color: white;
+}
+
+.card-body{
+    font-family: var(--font2);
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0 0 10rem 0;
+    color: white;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
 
 ## Author
 
